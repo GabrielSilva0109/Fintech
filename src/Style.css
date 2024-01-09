@@ -1,9 +1,9 @@
 html{
-  --color-1: #463220;
-  --color-2: #66593C;
-  --color-3: #eceadd;
-  --color-4: #f7f8f5;
-  --color-5: #ffffff;
+  --color-1: #149C88;
+  --color-2: #fff;
+  --color-3: #149C88;
+  --color-4: #0F0F16;
+  --color-5: #AFAEC7;
   --gap-s: 0.625rem;
   --gap: 1.25rem;
 }
@@ -50,4 +50,30 @@ ul {
 
 .mb{
   margin-bottom: var(--gap);
+}
+
+.bg-1{
+  background: var(--color-1);
+}
+
+.bg-2{
+  background: var(--color-2);
+}
+
+.bg-3{
+  background: var(--color-3);
+}
+
+.bg-4{
+  background: var(--color-4);
+}
+
+.bg-5{
+  background: var(--color-5);
+}
+
+.container{
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
 }
