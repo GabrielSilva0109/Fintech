@@ -6,10 +6,14 @@ import Meses from "./Meses"
 const Header = () => {
 
     return (
-        <div>
-            <DateRange />
+        <header className="mb">
+            <div className="mb">
+                <DateRange />
+                
+            </div>
             <Meses />
-        </div>
+        </header>
+        
     )
 }
 
