@@ -1,7 +1,12 @@
+import Resumo from "./Pages/Resumo"
 import "./Style.css"
 
 function App() {
-  return <div></div>
+  return (
+    <div>
+      <Resumo />
+    </div>
+  ) 
 }
 
 export default App
