@@ -1,9 +1,9 @@
 html{
-  --color-1: #149C88;
-  --color-2: #fff;
-  --color-3: #149C88;
-  --color-4: #0F0F16;
-  --color-5: #AFAEC7;
+  --color-1: #00c4a6;
+  --color-2: #ffffff;
+  --color-3: #3b3b3b;
+  --color-4: #050527;
+  --color-5: #b6b6b6;
   --gap-s: 0.625rem;
   --gap: 1.25rem;
 }
@@ -78,6 +78,35 @@ ul {
   gap: var(--gap);
   grid-template-columns: 240px auto;
 
+}
+/* Sidenav */
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav span{
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap);
+}
+
+.sidenav li a{
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-4);
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover span {
+  background: var(--color-2);
 }
 
 .resumo {
