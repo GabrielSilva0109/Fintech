@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import useFetch from "../Hooks/useFetch";
 import { IVenda } from "../Context/DataContext";
 
+type VendaSemData = Omit<IVenda, 'data'>
+
+
 const Venda = () => {
     const { id } = useParams()
     const {data, loading} = useFetch<IVenda>(`https://data.origamid.dev/vendas/${id}`)
@@ -18,7 +21,7 @@ const Venda = () => {
             })}</div>
             <div className="box mb">Status:{data.status}</div>
             <div className="box mb">Pagamento:{data.pagamento}</div>
-            <div className="box mb">Pagamento:{data.pagamento}</div>
+            <div className="box mb">Data:{data.data}</div>
         </div>
         
     )
