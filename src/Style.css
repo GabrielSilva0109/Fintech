@@ -108,7 +108,11 @@ ul {
 .sidenav li:hover span {
   background: var(--color-2);
 }
-
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
 
 /* datarange */
 .daterange{
