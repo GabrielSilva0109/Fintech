@@ -1,6 +1,6 @@
 import React from "react"
 import { IVenda } from "../Context/DataContext"
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 
 
 
@@ -18,6 +18,22 @@ const dadosGraficos = [
         falha: 2000,
     }
 ]
+
+type VendaDia = {
+    data: string,
+    pago: number,
+    processando: number,
+    falha: number
+}
+
+function transformData(data: IVenda[]): VendaDia[] {
+    return [{
+        data: string,
+    pago: number,
+    processando: number,
+    falha: number
+    }]
+}
 const GraficoVendas = ({data}: {data: IVenda}) => {
 
 
@@ -32,7 +48,7 @@ const GraficoVendas = ({data}: {data: IVenda}) => {
             <XAxis dataKey="data" />
             <YAxis />
             <Tooltip />
-            <CartesianGrid stroke="#f5f5f5"/>
+            <Legend />
             <Line type="monotone" dataKey="pago" stroke="#ff7300" strokeWidth={3}/>
             <Line type="monotone" dataKey="processando" stroke="#387908" strokeWidth={3}/>
             <Line type="monotone" dataKey="falha" stroke="#000" strokeWidth={3}/>
