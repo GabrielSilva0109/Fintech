@@ -6,13 +6,18 @@ import Resumo from "./Pages/Resumo"
 import Vendas from "./Pages/Vendas"
 import "./Style.css"
 import Venda from "./Pages/Venda"
+import SideBox from "./Components/SideBox"
 
 function App() {
   return (
     <BrowserRouter>
       <DataContextProvider>
         <div className="container">
-          <Sidenav />
+          <div className="nav-side">
+            <Sidenav />
+            <SideBox />
+          </div>
+          
           <main>
             <Header />
             <Routes>
@@ -22,6 +27,7 @@ function App() {
             </Routes>
           </main>
         </div>
+        
       </DataContextProvider>
     </BrowserRouter>
     

@@ -79,6 +79,12 @@ ul {
   grid-template-columns: 240px auto;
 
 }
+/* Nav - Side  */
+
+.sidenav {
+  margin-bottom: 20px;
+}
+
 /* Sidenav */
 .sidenav{
   height: max-content
