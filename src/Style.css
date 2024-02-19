@@ -80,7 +80,9 @@ ul {
 
 }
 /* Sidenav */
-
+.sidenav{
+  height: max-content
+}
 .sidenav li {
   display: flex;
   align-items: center;
